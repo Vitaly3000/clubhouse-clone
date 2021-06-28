@@ -11,7 +11,7 @@ $sides: (
    margin-#{$side}: #{$px * 5}px !important;
   }
   .p#{$letter}-#{$px *5} {
-   padding-#{$side}: #{$px * 5}px !important;
+   padding-#{$side}: #{$px *5}px !important;
   }
  }
 }

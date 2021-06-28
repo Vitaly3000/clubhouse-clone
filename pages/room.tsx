@@ -1,3 +1,3 @@
-export default function Rooms() {
+export default function RoomPage() {
   return <div>Все комнаты</div>;
 }

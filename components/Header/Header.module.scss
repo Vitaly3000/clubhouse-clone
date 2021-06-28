@@ -1,3 +1,16 @@
+.avatar {
+ background-size: cover;
+
+ background-repeat: no-repeat;
+ border-radius: 50%;
+ background-position: center center;
+}
+.avatarBorder {
+ border: 5px solid gray;
+}
+.header {
+ box-shadow: 1px 3px 8px -7px #000000;
+}
 .handWaveImg {
  animation-name: wave-animation;
  animation-duration: 3s;
@@ -8,21 +21,6 @@
  margin-right: 5px;
  margin-bottom: 3px;
 }
-.block {
- margin: 100px auto;
- text-align: center;
- p {
-  font-size: 20px;
-  line-height: 36px;
-  margin-bottom: 40px;
- }
-}
-.btn-img {
- margin-left: 10px !important;
- width: 20px;
- height: 30px;
-}
-
 @keyframes wave-animation {
  0% {
   transform: rotate(0deg);

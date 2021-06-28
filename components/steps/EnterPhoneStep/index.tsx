@@ -1,12 +1,30 @@
 import styles from './EnterPhoneStep.module.scss';
 import { Button } from '../../Button';
+import { StepInfo } from '../../StepInfo';
 import { WhiteBlock } from '../../WhiteBlock';
+import NumberFormat from 'react-number-format';
 import clsx from 'clsx';
-export const EnterPhoneStep = () => {
+import React from 'react';
+import { MainContext } from '../../../pages';
+
+type InputValueState = {
+  formattedValue: string;
+  value: string;
+};
+export const EnterPhoneStep: React.FC = () => {
+  const { onNextStep } = React.useContext(MainContext);
+
+  const [inputValue, setInputValue] = React.useState<InputValueState>(
+    {} as InputValueState,
+  );
+ 
+  const nextDisabled =
+    !inputValue.formattedValue || inputValue.formattedValue.includes('_');
+
   return (
     <div className={styles.block}>
       <StepInfo
-        icon=""
+        icon="/static/hand-wave.png"
         title="Enter your phone #"
         description="We will sent you a confirmation code"
       />
@@ -19,9 +37,14 @@ export const EnterPhoneStep = () => {
             mask="_"
             placeholder="+7 (999) 333-22-11"
             value={inputValue.value}
-            onValueChange={(values) => setInputValue(values)}></NumberFormat>
+            onValueChange={({ formattedValue, value }) =>
+              setInputValue({ formattedValue, value })
+            }></NumberFormat>
         </div>
-        <Buttom>Next</Buttom>
+        <Button onClick={onNextStep} disabled={nextDisabled}>
+          Next
+          <img className={styles['btn-img']} src="/static/arrow-left.svg" />
+        </Button>
         <p>
           By entering your number, you're agreeing to our Terms of Service and
           Privacy Policy. Thanks!

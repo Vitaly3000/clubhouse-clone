@@ -17,12 +17,17 @@
   margin-bottom: 40px;
  }
 }
-.title {
- display: flex;
- align-items: center;
- justify-content: center;
- font-size: 22px;
+.avatar {
+ div {
+  margin: 0 auto;
+ }
 }
+.btn-img {
+ margin-left: 10px !important;
+ width: 20px;
+ height: 30px;
+}
+
 @keyframes wave-animation {
  0% {
   transform: rotate(0deg);

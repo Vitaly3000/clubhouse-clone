@@ -1,7 +1,10 @@
 import styles from './WelcomeStep.module.scss';
 import { Button } from '../../Button';
 import { WhiteBlock } from '../../WhiteBlock';
-export const WelcomeStep = () => {
+import { MainContext } from '../../../pages';
+import React from 'react';
+export const WelcomeStep: React.FC = () => {
+  const { onNextStep } = React.useContext(MainContext);
   return (
     <WhiteBlock className={styles.block}>
       <h3 className={styles.title}>
@@ -18,7 +21,10 @@ export const WelcomeStep = () => {
         nothing breaks:
       </p>
       <div>
-        <Button>Get your username</Button>
+        <Button onClick={onNextStep}>
+          Get your username{' '}
+          <img className={styles['btn-img']} src="/static/arrow-left.svg" />
+        </Button>
       </div>
       <div className="link mt-15 cup d-ib ">Have an invite text? Sign in</div>
     </WhiteBlock>
