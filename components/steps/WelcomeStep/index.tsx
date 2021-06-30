@@ -21,7 +21,7 @@ export const WelcomeStep: React.FC = () => {
         nothing breaks:
       </p>
       <div>
-        <Button onClick={onNextStep}>
+        <Button className={styles.btn} onClick={onNextStep}>
           Get your username{' '}
           <img className={styles['btn-img']} src="/static/arrow-left.svg" />
         </Button>

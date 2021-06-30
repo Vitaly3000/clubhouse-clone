@@ -43,7 +43,7 @@ export const ChooseAvatarStep: React.FC = () => {
           </label>
         </div>
         <input id="image" ref={inputFileRef} type="file" hidden></input>
-        <Button onClick={onNextStep}>
+        <Button className={styles.btn} onClick={onNextStep}>
           Next
           <img className={styles['btn-img']} src="/static/arrow-left.svg" />
         </Button>

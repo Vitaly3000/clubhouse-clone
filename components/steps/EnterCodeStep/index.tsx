@@ -46,46 +46,24 @@ export const EnterCodeStep = () => {
           <WhiteBlock className={clsx('m-auto', styles.whiteBlock, 'mt-30')}>
             <div className={clsx('mb-30', styles.codeInputs)}>
               {codes.map((code, index) => {
-                return <input
-                  key={index}
-                  className="field"
-                  type="tel"
-                  placeholder="X"
-                  maxLength={1}
-                  id={String(index)}
-                  onChange={handleChangeInput}
-                  value={code}
-                />;
+                return (
+                  <input
+                    key={index}
+                    className="field"
+                    type="tel"
+                    placeholder="X"
+                    maxLength={1}
+                    id={String(index)}
+                    onChange={handleChangeInput}
+                    value={code}
+                  />
+                );
               })}
-              {/* <input
-                className="field"
-                type="tel"
-                placeholder="X"
-                maxLength={1}
-                id="2"
-                onChange={handleChangeInput}
-                value={codes[1]}
-              />
-              <input
-                className="field"
-                type="tel"
-                placeholder="X"
-                maxLength={1}
-                id="3"
-                onChange={handleChangeInput}
-                value={codes[2]}
-              />
-              <input
-                className="field"
-                type="tel"
-                placeholder="X"
-                maxLength={1}
-                id="4"
-                onChange={handleChangeInput}
-                value={codes[3]}
-              /> */}
             </div>
-            <Button onClick={onSubmit} disabled={nextDisabled}>
+            <Button
+              className={styles.btn}
+              onClick={onSubmit}
+              disabled={nextDisabled}>
               Next{' '}
               <img className={styles['btn-img']} src="/static/arrow-left.svg" />
             </Button>

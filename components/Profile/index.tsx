@@ -5,6 +5,7 @@ import clsx from 'clsx';
 import React from 'react';
 import { Avatar } from '../Avatar';
 import { Button } from '../Button';
+import { BackButton } from '../BackButton';
 interface ProfileProps {
   fullname: string;
   username: string;
@@ -19,17 +20,7 @@ export const Profile: React.FC<ProfileProps> = ({
 }) => {
   return (
     <>
-      <Link href="/rooms">
-        <div className={clsx('d-flex', ' cup', styles['back-btn'])}>
-          <img
-            className="mr-10"
-            width="24"
-            src="/static/back-arrow.svg"
-            alt=""
-          />
-          <h3>Back</h3>
-        </div>
-      </Link>
+      <BackButton title="Back" href="/rooms" />
 
       <div className="d-flex align-items-center  ">
         <div className="d-flex align-items-center ">

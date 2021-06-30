@@ -1,0 +1,78 @@
+[
+  {
+    "id": "10dc25fa6a3201d241202eec",
+    "avatars": ["https://source.unsplash.com/random/100x100?1"],
+    "guestsCount": 76,
+    "speakersCount": 12,
+    "title": "quis laborum.",
+    "guests": ["Мафиозник", "vitaly marg", "Мафиозник", "Мафиозник"]
+  },
+  {
+    "id": "20dc65fa6a3204d241202eec",
+    "avatars": [
+      "https://source.unsplash.com/random/100x100?1",
+      "https://source.unsplash.com/random/100x100?2"
+    ],
+    "guestsCount": 6,
+    "speakersCount": 52,
+    "title": "Occaecat ",
+    "guests": ["fefef", "vitaly marg", "Мафиозник", "Мафиозник"]
+  },
+  {
+    "id": "30dc65fd6a3201d241202eec",
+    "avatars": [
+      "https://source.unsplash.com/random/100x100?1",
+      "https://source.unsplash.com/random/100x100?2"
+    ],
+    "guestsCount": 26,
+    "speakersCount": 12,
+    "title": " exercitation ",
+    "guests": ["Маsdsddфиозник", "vitaly marg", "Мафиозник", "Мафиозник"]
+  },
+  {
+    "id": "40dc65fa6a3701d241202eec",
+    "avatars": ["https://source.unsplash.com/random/100x100?1"],
+    "guestsCount": 86,
+    "speakersCount": 22,
+    "title": "ullamco nostrud sunt anim quis laborum.",
+    "guests": ["www", "vitaly marg", "Мафиозник", "Мафиозник"]
+  },
+  {
+    "id": "50dc25fa6a3201d241202eec",
+    "avatars": ["https://source.unsplash.com/random/100x100?1"],
+    "guestsCount": 76,
+    "speakersCount": 12,
+    "title": "quis laborum.",
+    "guests": ["Мафиозник", "vitaly marg", "Мафиозник", "Мафиозник"]
+  },
+  {
+    "id": "60dc65fa6a3204d241202eec",
+    "avatars": [
+      "https://source.unsplash.com/random/100x100?1",
+      "https://source.unsplash.com/random/100x100?2"
+    ],
+    "guestsCount": 6,
+    "speakersCount": 52,
+    "title": "Occaecat ",
+    "guests": ["fefef", "vitaly marg", "Мафиозник", "Мафиозник"]
+  },
+  {
+    "id": "70dc65fd6a3201d241202eec",
+    "avatars": [
+      "https://source.unsplash.com/random/100x100?1",
+      "https://source.unsplash.com/random/100x100?2"
+    ],
+    "guestsCount": 26,
+    "speakersCount": 12,
+    "title": " exercitation ",
+    "guests": ["Маsdsddфиозник", "vitaly marg", "Мафиозник", "Мафиозник"]
+  },
+  {
+    "id": "80dc65fa6a3701d241202eec",
+    "avatars": ["https://source.unsplash.com/random/100x100?1"],
+    "guestsCount": 86,
+    "speakersCount": 22,
+    "title": "ullamco nostrud sunt anim quis laborum.",
+    "guests": ["www", "vitaly marg", "Мафиозник", "Мафиозник"]
+  }
+]

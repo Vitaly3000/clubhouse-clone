@@ -33,7 +33,7 @@ export const EnterNameStep = () => {
             placeholder="Enter fullname"
           />
         </div>
-        <Button disabled={nextDisabled} onClick={onClickNextStep}>
+        <Button className={styles.btn} disabled={nextDisabled} onClick={onClickNextStep}>
           Next{' '}
           <img className={styles['btn-img']} src="/static/arrow-left.svg" />
         </Button>

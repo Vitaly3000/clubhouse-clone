@@ -6,7 +6,7 @@ import clsx from 'clsx';
 import React from 'react';
 import { MainContext } from '../../../pages';
 
-export const TwitterStep:React.FC  = () => {
+export const TwitterStep: React.FC = () => {
   const { onNextStep } = React.useContext(MainContext);
 
   return (
@@ -21,7 +21,7 @@ export const TwitterStep:React.FC  = () => {
         </div>
         <h2 className="mb-40"> Vitaly marg</h2>
         <div>
-          <Button onClick={onNextStep}>
+          <Button className={styles.btn} onClick={onNextStep}>
             <img className={styles['btn-img']} src="/static/twitter-icon.svg" />
             Import from Twitter{' '}
             <img className={styles['btn-img']} src="/static/arrow-left.svg" />

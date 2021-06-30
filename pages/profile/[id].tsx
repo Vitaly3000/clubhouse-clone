@@ -1,10 +1,9 @@
 import { useRouter } from 'next/dist/client/router';
 import React from 'react';
-import { Avatar } from '../../components/Avatar';
-import { Button } from '../../components/Button';
+
 import { Header } from '../../components/Header';
 import { Profile } from '../../components/Profile';
-import styles from './profile.module.scss';
+
 export default function ProfilePage() {
   const router = useRouter();
   const { id } = router.query;

@@ -41,7 +41,7 @@ export const EnterPhoneStep: React.FC = () => {
               setInputValue({ formattedValue, value })
             }></NumberFormat>
         </div>
-        <Button onClick={onNextStep} disabled={nextDisabled}>
+        <Button className={styles.btn} onClick={onNextStep} disabled={nextDisabled}>
           Next
           <img className={styles['btn-img']} src="/static/arrow-left.svg" />
         </Button>
