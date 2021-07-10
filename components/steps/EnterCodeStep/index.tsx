@@ -28,7 +28,7 @@ export const EnterCodeStep = () => {
   const onSubmit = async () => {
     try {
       setIsLoading(true);
-      await axios.get('/todos');
+
       router.push('/rooms');
     } catch (error) {
       alert('Ошибка при активации!');

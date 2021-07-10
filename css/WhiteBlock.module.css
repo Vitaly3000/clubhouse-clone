@@ -1,0 +1,13 @@
+.block {
+  width: 100%;
+  max-width: 650px;
+  min-height: 200px;
+  border: 1px solid #e8e3d7;
+  background: #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  padding: 65px;
+}

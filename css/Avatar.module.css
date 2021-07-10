@@ -1,0 +1,10 @@
+.avatar {
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  background-position: center center;
+}
+
+.avatarBorder {
+  border: 5px solid gray;
+}

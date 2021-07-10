@@ -8,7 +8,25 @@ import { MainContext } from '../../../pages';
 
 export const TwitterStep: React.FC = () => {
   const { onNextStep } = React.useContext(MainContext);
+  const onCLickAuth = () => {
+    const win = window.open(
+      'http://localhost:3001/auth/github',
+      'Auth',
+      'width=400,height=400 status=yes,toolbar=no,menubar=no,location=no',
+    );
+    const timer = setInterval(() => {
+      if (win.closed) {
+        clearInterval(timer);
+        onNextStep();
+      }
+    }, 300);
+  };
 
+  React.useEffect(() => {
+    window.addEventListener('message', (data) => {
+      console.log(data);
+    });
+  }, []);
   return (
     <div className={styles.block}>
       <StepInfo
@@ -21,7 +39,7 @@ export const TwitterStep: React.FC = () => {
         </div>
         <h2 className="mb-40"> Vitaly marg</h2>
         <div>
-          <Button className={styles.btn} onClick={onNextStep}>
+          <Button className={styles.btn} onClick={onCLickAuth}>
             <img className={styles['btn-img']} src="/static/twitter-icon.svg" />
             Import from Twitter{' '}
             <img className={styles['btn-img']} src="/static/arrow-left.svg" />
