@@ -4,7 +4,7 @@ import { WhiteBlock } from '../../WhiteBlock';
 import clsx from 'clsx';
 import React from 'react';
 import { StepInfo } from '../../StepInfo';
-import axios from '../../../core/axios';
+
 import { useRouter } from 'next/dist/client/router';
 export const EnterCodeStep = () => {
   const router = useRouter();

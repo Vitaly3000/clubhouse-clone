@@ -15,8 +15,13 @@
 }
 .btn {
  margin: 0 auto;
+ background-color: #24292e;
+}
+.btn:hover {
+ background-color: lighten(#24292e, 5%);
 }
 .btn-img {
- width: 20px;
- height: 30px;
+ margin-right: 10px !important;
+ width: 25px;
+ height: 25px;
 }

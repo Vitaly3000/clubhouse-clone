@@ -2,7 +2,7 @@ import clsx from 'clsx';
 import { useRouter } from 'next/dist/client/router';
 import React from 'react';
 import { BackButton } from '../../components/BackButton';
-import Axios from '../../core/axios';
+import { Axios } from '../../core/axios';
 import { Header } from '../../components/Header';
 import { Room } from '../../components/Room';
 

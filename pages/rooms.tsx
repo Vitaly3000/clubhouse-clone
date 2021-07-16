@@ -1,4 +1,4 @@
-import Axios from '../core/axios';
+import { Axios } from '../core/axios';
 import Link from 'next/link';
 import React from 'react';
 import { Button } from '../components/Button';

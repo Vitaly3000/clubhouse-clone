@@ -6,14 +6,16 @@ import clsx from 'clsx';
 import React from 'react';
 import { MainContext } from '../../../pages';
 export const EnterNameStep = () => {
-  const [inputValue, setInputValue] = React.useState<string>('');
-  const { onNextStep } = React.useContext(MainContext);
+  const { onNextStep, userData, setFieldValue } = React.useContext(MainContext);
+  const [inputValue, setInputValue] = React.useState<string>(userData.fullname);
+
   const handleChangeInput = (event: React.ChangeEvent<HTMLInputElement>) => {
     setInputValue(event.target.value);
   };
   const nextDisabled = !inputValue;
   const onClickNextStep = () => {
     if (inputValue) {
+      setFieldValue('fullname', inputValue);
       onNextStep();
     }
   };
@@ -33,7 +35,10 @@ export const EnterNameStep = () => {
             placeholder="Enter fullname"
           />
         </div>
-        <Button className={styles.btn} disabled={nextDisabled} onClick={onClickNextStep}>
+        <Button
+          className={styles.btn}
+          disabled={nextDisabled}
+          onClick={onClickNextStep}>
           Next{' '}
           <img className={styles['btn-img']} src="/static/arrow-left.svg" />
         </Button>
